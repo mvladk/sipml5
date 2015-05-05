@@ -1,12 +1,12 @@
 <?php
 
-ob_start();
+//ob_start();
 
 // -----
 
 // Error displaying (comment the following to turn on error displaying)
 
-error_reporting(0);
+error_reporting(1);
 
 // Constants
 
@@ -26,6 +26,6 @@ $response->send();
 
 // -----
 
-ob_end_flush();
+//ob_end_flush();
 
 ?>

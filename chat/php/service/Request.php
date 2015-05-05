@@ -35,7 +35,7 @@ class Request extends Service
         $this->uri     = $_SERVER['REQUEST_URI'];
         $this->rootUri = $_SERVER['SCRIPT_NAME'];
         $this->route   = trim(isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '/', '/');
-        
+
         $this->rootUrl = '/' . trim(substr($this->uri, 0, strpos($this->uri, '/php/app.php')), '/');
     }
     

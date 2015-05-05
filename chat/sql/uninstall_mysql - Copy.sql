@@ -1,0 +1,2 @@
+DROP TABLE admin_rchat.mirrormx_customer_chat_user;
+DROP TABLE admin_rchat.mirrormx_customer_chat_message;

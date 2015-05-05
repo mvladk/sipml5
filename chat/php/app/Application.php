@@ -61,14 +61,22 @@ class Application
             // Find the matching action
 
             $action = $this->services->get('router')->getAction($request->getRoute());
-
+//			echo '<pre>';
+//			var_dump($action);
+//			var_dump($request);
+//			var_dump($authorized);
+//			var_dump($request->getRoute());
+//			exit;
             if($action)
             {
                 // Run the action and return the response
 
                 $controller = $action['controller'];
                 $actionName = $action['action'];
-
+//				echo '<pre>';
+//				var_dump($controller);
+//				var_dump($actionName);
+//				exit;
                 // Inject services to the controller
 
                 $controller->setServiceContainer($this->services);

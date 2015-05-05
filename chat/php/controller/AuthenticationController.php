@@ -118,7 +118,11 @@ class AuthenticationController extends Controller
         
         $errors   = false;
         $username = '';
-        
+//        			echo '<pre>';
+//			var_dump( $config->data['superUser'] );
+//			var_dump( $config->data['superPass'] );
+//			var_dump( $security->encodePassword($config->data['superPass']) );
+//			exit;
         if($request->isPost())
         {
             // Get credentials

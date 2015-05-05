@@ -25,7 +25,7 @@ class Router extends Service
     public function getAction($route)
     {
         // Find matching action
-        
+		
         foreach($this->routes as $path => $action)
         {
             if($path == $route)
